@@ -182,7 +182,7 @@ canvas{
    padding-bottom: 5vh;
 }
 #startMainLeft {
-   display: block;
+   display: none;
    margin-top: auto;
    margin-bottom: auto;
    width: 50%;
@@ -517,6 +517,7 @@ select {
 }
 
 .startScreenImg{
+   display: none;
 	position: fixed;
 	opacity: 0.1;
 	width: 25vmin;

@@ -1,4 +1,10 @@
 function generateLanguageButtons() {
+   var div = document.getElementById('startSelectLanguage');
+   if (configvars["forceLanguage"] && configvars["forceLanguage"] != '') {
+      language = configvars["forceLanguage"];
+	   div.style.display = 'none';
+      return;
+   }
    if (navigator.languages) {
       for (var i = navigator.languages.length-1; i >= 0; i--) {
          var langtag = navigator.languages[i].split('-')[0];
@@ -11,7 +17,6 @@ function generateLanguageButtons() {
       }
    }
 
-   var div = document.getElementById('startSelectLanguage');
    var sellang = document.createElement('select');
    sellang.className = 'bordered language';
    sellang.id = 'optSelectLanguage';
