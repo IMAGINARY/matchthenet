@@ -58,7 +58,9 @@ function setEventListeners(){
 		infoHints[i].addEventListener('mouseenter', toggleInfoBox);
 		infoHints[i].addEventListener('mouseleave', toggleInfoBox);
    }
-   languageOpt.addEventListener('change', changeLanguage);
+   if (languageOpt) {
+      languageOpt.addEventListener('change', changeLanguage);
+   }
 };
 
 function setNetEventListeners(){

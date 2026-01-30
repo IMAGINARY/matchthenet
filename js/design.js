@@ -15,12 +15,31 @@ var greenGradient = "linear-gradient(hsl(112, 51%, 89%),rgb(29, 185, 70))";
 var greenGradientRev = "linear-gradient(rgb(29, 185, 70), hsl(112, 51%, 89%))";
 var blueColor = 'hsla(208, 100%, 74%, 1)';
 var greyColor = 'hsla(0, 0%, 75%, 1)';
-document.body.style.backgroundColor = backgroundColor;
+if (configvars["backgroundColor"]) {
+   document.body.style.backgroundColor = configvars["backgroundColor"];
+} else {
+   document.body.style.backgroundColor = backgroundColor;
+}
+var bgImg = document.getElementsByClassName('startScreenImg');
+if (configvars["backgroundImages"] != false) {
+   for (var i = 0; i < bgImg.length; i++) {
+      bgImg[i].style.display='block';
+   }
+}
+if (configvars["showAbout"] != false) {
+   var startMainLeft = document.getElementById('startMainLeft');
+   startMainLeft.style.display = 'block';
+}
 
-
-
+if (configvars["showCredits"] == false) {
+   var copyright = document.getElementById('copyright');
+   copyright.style.display = 'none';
+}
 //---------- BUTTONS --------------------------------
 
+if (configvars["showSettings"] == false) {
+   settingsButton.style.display = 'none';
+}
 
 function buttonDown(event){
 	event.currentTarget.style.boxShadow = 'none';
