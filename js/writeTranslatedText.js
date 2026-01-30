@@ -29,7 +29,7 @@ function generateLanguageButtons() {
    languageOpt = document.getElementById('optSelectLanguage');
 }
 
-generateLanguageButtons();
+//generateLanguageButtons();
 
 function writeTranslatedText(){
 	document.getElementById('controlsText').innerHTML= translation[language]['Controls'];

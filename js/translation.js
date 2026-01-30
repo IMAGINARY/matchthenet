@@ -1,6 +1,6 @@
 var showLanguages = [ 'ca', 'en', 'fr', 'de', 'es', 'uk'];
 // fallback language for some strings
-var fallbackLanguage = 'en';
+var fallbackLanguage = 'uk';
 // current language
 var language = fallbackLanguage;
 

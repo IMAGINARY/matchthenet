@@ -79,6 +79,7 @@ body, button, select, option{
 }
 
 #startSelectLanguage{
+   display:none;
 	width: 100%;
 }
 
@@ -182,7 +183,7 @@ canvas{
    padding-bottom: 5vh;
 }
 #startMainLeft {
-   display: block;
+   display: none;
    margin-top: auto;
    margin-bottom: auto;
    width: 50%;
@@ -473,6 +474,7 @@ select {
 	top: 0;
 	right: 0;
 	margin: 1vmin;
+   display: none;
 }
 
 
@@ -503,6 +505,7 @@ select {
 }
 
 #copyright{
+   display:none;
 	position: fixed;
 	bottom: 0;
 	right: 0;
@@ -517,6 +520,7 @@ select {
 }
 
 .startScreenImg{
+   display: none;
 	position: fixed;
 	opacity: 0.1;
 	width: 25vmin;
