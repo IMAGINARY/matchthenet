@@ -79,7 +79,6 @@ body, button, select, option{
 }
 
 #startSelectLanguage{
-   display:none;
 	width: 100%;
 }
 
@@ -474,7 +473,6 @@ select {
 	top: 0;
 	right: 0;
 	margin: 1vmin;
-   display: none;
 }
 
 
@@ -505,7 +503,6 @@ select {
 }
 
 #copyright{
-   display:none;
 	position: fixed;
 	bottom: 0;
 	right: 0;
